@@ -1,0 +1,1 @@
+# django_testing_net_ninja
