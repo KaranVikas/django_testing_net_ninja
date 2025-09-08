@@ -27,9 +27,9 @@ class Product(models.Model):
     def in_stock(self) ->  bool:
       return self.stock_count > 0
 
-    def clean(self):
-      if self.price < 0:
-        raise ValidationError({'price': 'Price cannot be negative'})
+    # def clean(self):
+      # if self.price < 0:
+      #   raise ValidationError({'price': 'Price cannot be negative'})
 
-      if self.stock_count < 0:
-        raise ValidationError({'stock_count': 'Stock count cannot be negative'})
+      # if self.stock_count < 0:
+      #   raise ValidationError({'stock_count': 'Stock count cannot be negative'})
